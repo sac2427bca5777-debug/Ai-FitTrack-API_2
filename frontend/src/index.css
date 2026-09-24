@@ -1,0 +1,461 @@
+/* Login Page */
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 450px;
+  padding: 40px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.login-card h1 {
+  color: #4f46e5;
+  margin-bottom: 8px;
+}
+
+.login-card > p {
+  color: #6b7280;
+}
+
+.login-card h2 {
+  margin-top: 30px;
+}
+
+.login-card form {
+  width: 100%;
+  margin: 25px 0;
+}
+
+.login-card form button {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.login-card > button {
+  background: transparent;
+  color: #4f46e5;
+  border: 1px solid #4f46e5;
+}
+
+.login-card > button:hover {
+  background: #4f46e5;
+  color: white;
+}
+/* Dashboard */
+
+.dashboard-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.dashboard-header {
+  margin-bottom: 25px;
+}
+
+.dashboard-header h1 {
+  color: #4f46e5;
+  margin-bottom: 5px;
+}
+
+.dashboard-header p {
+  color: #6b7280;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.stat-card {
+  background: white;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.stat-card h3 {
+  margin-top: 0;
+  font-size: 15px;
+  color: #6b7280;
+}
+
+.stat-card strong {
+  display: block;
+  font-size: 30px;
+  color: #4f46e5;
+  margin: 10px 0;
+}
+
+.stat-card p {
+  margin: 0;
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.category-card {
+  margin-top: 20px;
+  padding: 22px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.category-card h3 {
+  margin-top: 0;
+  color: #6b7280;
+}
+
+.category-card strong {
+  font-size: 20px;
+  color: #4f46e5;
+}
+
+/* Dashboard mobile */
+
+@media (max-width: 800px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Add Workout */
+
+.workout-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px 20px 30px;
+}
+
+.section-card {
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.section-card h2 {
+  margin-top: 0;
+  color: #111827;
+}
+
+.section-description {
+  color: #6b7280;
+  margin-bottom: 25px;
+}
+
+.section-card form {
+  max-width: 600px;
+  margin: 0;
+}
+
+.success-message {
+  color: #15803d;
+  font-weight: 600;
+  margin-top: 15px;
+}
+/* My Workouts */
+
+.workouts-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px 20px 30px;
+}
+
+.workouts-header {
+  margin-bottom: 20px;
+}
+
+.workouts-header h2 {
+  margin-bottom: 5px;
+}
+
+.workouts-header p {
+  color: #6b7280;
+}
+
+.workout-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.workout-card {
+  background: white;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.workout-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.workout-category {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: #eef2ff;
+  color: #4f46e5;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.workout-details {
+  margin: 18px 0;
+}
+
+.workout-details p {
+  margin: 8px 0;
+  color: #4b5563;
+}
+
+.workout-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.workout-actions button {
+  margin: 0;
+}
+
+.delete-button {
+  background: #dc2626;
+}
+
+.delete-button:hover {
+  background: #b91c1c;
+}
+
+.edit-box {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.edit-box h4 {
+  margin-top: 0;
+}
+
+.edit-box input {
+  margin-bottom: 10px;
+}
+
+.edit-box button {
+  margin-left: 0;
+}
+
+.cancel-button {
+  background: #6b7280;
+}
+
+.cancel-button:hover {
+  background: #4b5563;
+}
+
+.empty-workouts {
+  background: white;
+  padding: 35px;
+  text-align: center;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.empty-workouts h3 {
+  margin-top: 0;
+}
+
+.empty-workouts p {
+  color: #6b7280;
+}
+
+.error-message {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  .workout-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* AI Recommendation */
+
+.ai-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px 20px 30px;
+}
+
+.ai-card {
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.ai-header h2 {
+  margin-top: 0;
+  color: #111827;
+}
+
+.ai-header p {
+  color: #6b7280;
+  margin-bottom: 25px;
+}
+
+.ai-card form {
+  max-width: 600px;
+  margin: 0;
+}
+
+.ai-card form button {
+  width: 100%;
+  margin: 10px 0 0;
+}
+
+.ai-result {
+  margin-top: 25px;
+  padding: 22px;
+  border-radius: 12px;
+  background: #eef2ff;
+  border-left: 5px solid #4f46e5;
+}
+
+.ai-result h3 {
+  margin-top: 0;
+  color: #4f46e5;
+}
+
+.ai-result p {
+  color: #374151;
+  white-space: pre-line;
+}
+/* AI Fitness Chatbot */
+
+.chatbot-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px 20px 40px;
+}
+
+.chatbot-card {
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.chatbot-header h2 {
+  margin-top: 0;
+  color: #111827;
+}
+
+.chatbot-header p {
+  color: #6b7280;
+}
+
+.chat-messages {
+  min-height: 250px;
+  max-height: 450px;
+  overflow-y: auto;
+  margin: 25px 0;
+  padding: 15px;
+  background: #f9fafb;
+  border-radius: 12px;
+}
+
+.chat-empty {
+  text-align: center;
+  padding: 70px 20px;
+  color: #6b7280;
+}
+
+.chat-empty small {
+  color: #9ca3af;
+}
+
+.chat-message {
+  max-width: 80%;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+}
+
+.chat-message strong {
+  font-size: 13px;
+}
+
+.chat-message p {
+  margin: 5px 0 0;
+}
+
+.user-message {
+  margin-left: auto;
+  background: #4f46e5;
+  color: white;
+}
+
+.ai-message {
+  margin-right: auto;
+  background: #eef2ff;
+  color: #374151;
+}
+
+.chat-form {
+  display: flex;
+  gap: 10px;
+  max-width: none !important;
+  margin: 0 !important;
+}
+
+.chat-form input {
+  flex: 1;
+}
+
+.chat-form button {
+  width: auto;
+  min-width: 80px;
+  margin: 0;
+}
+
+/* Chatbot mobile */
+
+@media (max-width: 600px) {
+  .chatbot-card {
+    padding: 20px;
+  }
+
+  .chat-message {
+    max-width: 90%;
+  }
+
+  .chat-form {
+    flex-direction: column;
+  }
+
+  .chat-form button {
+    width: 100%;
+  }
+}
